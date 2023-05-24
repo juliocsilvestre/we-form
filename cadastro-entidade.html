@@ -12,6 +12,9 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
             rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="assets/fontawesome/fontawesome-free-6.4.0-web/svgs/">
     </head>
     <body>
         <div class="content">
@@ -21,13 +24,31 @@
             </aside>
 
             <main>
-                <a href="index.html">
-                    <i class="fa-solid fa-angle-left"></i>
-                </a>
-                <h2>Nova <span>entidade</span></h2>
-                <div class="actions">
-                    <a href="">Cadastrar entidade</a>
-                    <a href="">Ver entidades cadastradas</a>
+                <header>
+                    <a href="index.html">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </a>
+                    <h2>Nova <span>entidade</span></h2>
+                </header>
+                <form>
+                    <label for="input-name">Nome</label>
+                    <input class="input" type="text" id="input-name">
+
+                    <label for="input-field">Campo de atuação</label>
+                    <select class="input" type="text" id="input-field">
+                        <option value="" disabled>Selecione uma opção</option>
+                        <option value="abrigo">Abrigo de Animais</option>
+                    </select>
+                    <div class="points">
+                        <label for="input-points">Pontos de coleta</label>
+                        <input class="input" type="text" id="input-points">
+                        <button>
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="actions register">
+                    <a href="">Cadastrar</a>
                 </div>
                 <footer><p>Sua entidade não se enquadra nos campos de atuação
                         disponíveis?</p>
